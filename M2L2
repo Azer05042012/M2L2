@@ -27,3 +27,7 @@ async def fact(ctx):
     fact4 = [fact1, fact2, fact3]
     fact = random.choice(fact4)
     await ctx.send(fact)
+    
+@bot.command()
+async def help(ctx):
+    await ctx.send('$hello--для приветствия с ботом.$ecology--для сообщения об экологии.$fact--для факта об экологии.')
